@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <p>Test input</p>
+  <input type="file" onchange="viewFileData()">
+	<form method="post" enctype="multipart/form-data">
+	  <label for="file">File</label>
+      <input id="file" name="file" type="file" />
+      <button>Upload</button>
+    </form>
+
+    <!--base64 image display example-->
+    <div>
+      <p>Taken from wikpedia</p>
+      <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
+        AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+            9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
+    </div>
+	<script src="index.js"></script>
+  </body>
+</html>
