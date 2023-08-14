@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <p>Test input</p>
-  <input type="file" onchange="viewFileData()">
+	<p>Test input</p>
+	<input type="file" id="fileInput" onchange="viewFileData()">
 	<form method="post" enctype="multipart/form-data">
 	  <label for="file">File</label>
       <input id="file" name="file" type="file" />
-      <button>Upload</button>
+      <button onclick="viewFileData()">Upload</button>
     </form>
+	
+	<input type="button" value="view image" onclick="addImg()" />
 
     <!--base64 image display example-->
-    <div>
-      <p>Taken from wikpedia</p>
-      <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
-        AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
-            9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
+    <div id="img1">
+      <p>Display image inserted data:</p>
     </div>
+    <div>
+      <p>Display uploaded image:</p>
+      <img id="imgTest" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
+    AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+        9TXL0Y4OHwAAAABJRU5ErkJggg=="/>
+	</div>
+
 	<script src="index.js"></script>
   </body>
 </html>
