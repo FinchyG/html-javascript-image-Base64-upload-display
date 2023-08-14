@@ -39,3 +39,11 @@ function addImg() {
   newImg.alt = "alt text";
   document.getElementById("img1").appendChild(newImg);
 }
+
+// new upload code
+document.getElementById('buttonid').addEventListener('click', openDialog);
+
+function openDialog() {
+  console.log("new button clicked.");
+  document.getElementById('fileid').click();
+}

@@ -14,7 +14,7 @@
       <input id="file" name="file" type="file" />
       <button onclick="viewFileData()">Upload</button>
     </form>
-	
+
 	<input type="button" value="view image" onclick="addImg()" />
 
     <!--base64 image display example-->
@@ -24,9 +24,13 @@
     <div>
       <p>Display uploaded image:</p>
       <img id="imgTest" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
-    AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
-        9TXL0Y4OHwAAAABJRU5ErkJggg=="/>
+		   AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+		   9TXL0Y4OHwAAAABJRU5ErkJggg=="/>
 	</div>
+
+	<h2>New file upload code</h2>
+	<input id='fileid' type='file' hidden/>
+	<input id='buttonid' type='button' value='Upload MB' />
 
 	<script src="index.js"></script>
   </body>
