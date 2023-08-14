@@ -3,34 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML 5 Boilerplate</title>
+    <title>Image BLOB upload and view on button click</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-	<p>Test input</p>
+	<label for="fileInput">Choose a file to upload:</label>
 	<input type="file" id="fileInput" onchange="viewFileData()">
-	<form method="post" enctype="multipart/form-data">
-	  <label for="file">File</label>
-      <input id="file" name="file" type="file" />
-      <button onclick="viewFileData()">Upload</button>
-    </form>
 
 	<input type="button" value="view image" onclick="addImg()" />
 
     <!--base64 image display example-->
     <div id="img1">
-      <p>Display image inserted data:</p>
+      <p>Uploaded image will display below on clicking view image:</p>
     </div>
-    <div>
-      <p>Display uploaded image:</p>
-      <img id="imgTest" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
-		   AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
-		   9TXL0Y4OHwAAAABJRU5ErkJggg=="/>
-	</div>
-
-	<h2>New file upload code</h2>
-	<input id='fileid' type='file' hidden/>
-	<input id='buttonid' type='button' value='Upload MB' />
 
 	<script src="index.js"></script>
   </body>
