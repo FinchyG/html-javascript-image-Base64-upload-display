@@ -1,4 +1,7 @@
 img {
-    width: 4rem;
-    height: 4rem;
+  border: 0.25rem solid rgba(169, 184, 207, 0.7);
+  border-radius: 0.1rem;
+  padding: 0.1rem;    
+  width: 4rem;
+  height: 4rem;
 }
