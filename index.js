@@ -1,7 +1,7 @@
 // variable to store and pass image BLOB data between upload and display functions
 var readerResult;
 
-// upload image BLOB data from HTML file select
+// upload image Base64 data from HTML file select
 function uploadFileData() {
   var file = document.getElementById('fileInput').files[0];
   function getBase64(file) {
@@ -24,7 +24,7 @@ function uploadFileData() {
   */
 }
 
-// display BLOB image data in HTML document
+// display Base64 image data in HTML document
 function viewImg() {
   const newImg = document.createElement("img");
   newImg.src = readerResult;
