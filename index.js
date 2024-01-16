@@ -1,11 +1,12 @@
 // variable to store and pass image BLOB data between upload and display functions
 var readerResult;
 
-// upload image Base64 data from HTML file select
+// upload image base64 data from HTML file select
 function uploadFileData() {
   var file = document.getElementById('fileInput').files[0];
-  function getBase64(file) {
+  function getbase64(file) {
     var reader = new FileReader();
+    // call readAsDataURL method of FileReader to convert file to a base64 encoded string
     reader.readAsDataURL(file);
     reader.onload = function () {
       readerResult = reader.result;
@@ -17,14 +18,14 @@ function uploadFileData() {
       console.log('Error: ', error);
     };
   }
-  getBase64(file);
+  getbase64(file);
   
   /** optional code to create unique filename
   let fileName = `${Date.now()}-optionalText-${file.name}`;
   */
 }
 
-// display Base64 image data in HTML document
+// display base64 image data in HTML document
 function viewImg() {
   const newImg = document.createElement("img");
   newImg.src = readerResult;
