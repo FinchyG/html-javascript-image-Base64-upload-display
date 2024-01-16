@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,8 @@
   </head>
   <body>
 	<label for="fileInput">Choose a file to upload:</label>
-	<input type="file" id="fileInput" onchange="uploadFileData()">
+	<input type="file" id="fileInput" onchange="uploadFileData()"
+    accept="image/png, image/jpeg">
 
 	<input type="button" value="view image" onclick="viewImg()" />
 
